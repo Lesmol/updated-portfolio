@@ -3,7 +3,6 @@ import Experience from "@/components/about/experience";
 import Images from "@/components/about/images";
 import ReachOut from "@/components/about/reachOut";
 import Navbar from "@/components/navbar";
-import { motion } from "framer-motion";
 import { Metadata } from "next";
 import React from "react";
 
@@ -15,7 +14,7 @@ export const metadata: Metadata = {
 
 function about() {
   return (
-    <div className="container mx-auto max-w-2xl items-center">
+    <div className="container mx-auto mb-24 max-w-2xl items-center p-4 md:p-0">
       <Navbar />
       <Images />
       <Description />

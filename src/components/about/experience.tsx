@@ -8,7 +8,7 @@ function experience() {
       <p className="text-primary mb-6 text-sm">
         Here are some of the places I've worked
       </p>
-      <div className="mt-3 space-y-8">
+      <div id="experience" className="mt-3 space-y-8">
         <SummaryPane
           title="Support Specialist"
           duration="2024 - Present"

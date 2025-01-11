@@ -3,8 +3,8 @@ import CustomImage from "./customImage";
 
 function images() {
   return (
-    <div className="mt-8">
-      <h1 className="text-3xl font-bold">About Me</h1>
+    <div className="mt-6">
+      <h1 className="text-4xl font-bold">About me</h1>
       <p className="text-primary">Have a little look.</p>
       <div className="mt-4 flex justify-between">
         <CustomImage

@@ -12,8 +12,8 @@ function navbar() {
   }
 
   return (
-    <div className="mx-auto max-w-lg">
-      <nav className="bg-primary mt-4 flex items-center justify-between rounded-3xl px-6 py-4">
+    <div className="flex max-w-lg justify-end md:mx-auto md:block">
+      <nav className="bg-primary mt-4 hidden items-center justify-between rounded-3xl px-6 py-4 md:flex">
         <Link href="/">
           <img
             src="https://cloudresumeresources.blob.core.windows.net/resumeimages/logo.svg"
@@ -21,19 +21,6 @@ function navbar() {
             className="md: w-14"
           />
         </Link>
-
-        <button onClick={onToggle} className="text-primary text-xl sm:hidden">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="26"
-            height="26"
-            fill="white"
-            className="bi bi-grid"
-            viewBox="0 0 16 16"
-          >
-            <path d="M1 2.5A1.5 1.5 0 0 1 2.5 1h3A1.5 1.5 0 0 1 7 2.5v3A1.5 1.5 0 0 1 5.5 7h-3A1.5 1.5 0 0 1 1 5.5zM2.5 2a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5zm6.5.5A1.5 1.5 0 0 1 10.5 1h3A1.5 1.5 0 0 1 15 2.5v3A1.5 1.5 0 0 1 13.5 7h-3A1.5 1.5 0 0 1 9 5.5zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5zM1 10.5A1.5 1.5 0 0 1 2.5 9h3A1.5 1.5 0 0 1 7 10.5v3A1.5 1.5 0 0 1 5.5 15h-3A1.5 1.5 0 0 1 1 13.5zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5zm6.5.5A1.5 1.5 0 0 1 10.5 9h3a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 13.5zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5z" />
-          </svg>
-        </button>
 
         <ul className="hidden text-lg sm:flex">
           <li>
@@ -71,6 +58,23 @@ function navbar() {
         </ul>
       </nav>
 
+      <button
+        onClick={onToggle}
+        className="bg-primary text-primary right-0 mt-4 flex w-fit items-center rounded-xl px-4 py-2 text-lg md:hidden"
+      >
+        Menu{" "}
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="16"
+          height="16"
+          fill="currentColor"
+          className="bi bi-caret-down"
+          viewBox="0 0 16 16"
+        >
+          <path d="M3.204 5h9.592L8 10.481zm-.753.659 4.796 5.48a1 1 0 0 0 1.506 0l4.796-5.48c.566-.647.106-1.659-.753-1.659H3.204a1 1 0 0 0-.753 1.659" />
+        </svg>
+      </button>
+
       <AnimatePresence>
         {mobileNav ? (
           <motion.div
@@ -79,24 +83,7 @@ function navbar() {
             animate={{ y: 0, opacity: 1 }}
             exit={{ y: -5, opacity: 0 }}
             transition={{ duration: 0.2 }}
-          >
-            <Link href="/">
-              <div className="px-4 py-2">Home</div>
-            </Link>
-
-            <Link href="/about">
-              <div className="px-4 py-1">About</div>
-            </Link>
-            <Link href="/blog">
-              <div className="px-4 py-2">Blog</div>
-            </Link>
-            <Link href="/blog">
-              <div className="px-4 py-2">Projects</div>
-            </Link>
-            <Link href="/blog">
-              <div className="px-4 py-2">More</div>
-            </Link>
-          </motion.div>
+          ></motion.div>
         ) : null}
       </AnimatePresence>
     </div>

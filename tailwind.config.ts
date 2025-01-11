@@ -9,9 +9,10 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: "#a0a0a0",
+        primary: "#999999",
         "darker-primary": "#616161",
         background: "#1E1E1E",
+        "custom-light-grey": "#B3B3B3",
       },
       screens: {
         sm: "480px",
@@ -20,7 +21,7 @@ export default {
         xl: "1440px",
       },
       backgroundColor: {
-        primary: "#1E1E1E",
+        primary: "#141414",
         "text-darker-primary": "#2D2D2D",
         secondary: "#181818",
         light: "#E9E9E9",
