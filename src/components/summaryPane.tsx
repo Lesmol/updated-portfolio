@@ -1,0 +1,35 @@
+import React from "react";
+
+interface SummaryPaneProps {
+  title: string;
+  duration: string;
+  description: string;
+  imageUrl: string;
+  imageAlt: string;
+  institutionUrl: string;
+}
+
+function summaryPane(props: SummaryPaneProps) {
+  return (
+    <a href={props.institutionUrl} target="_blank" className="block">
+      <div className="mx-auto mt-3 flex w-full max-w-[570px] items-center justify-between">
+        <div className="flex w-96 items-center space-x-3">
+          <img
+            src={props.imageUrl}
+            alt={props.imageAlt}
+            className="w-12 rounded-full"
+          />
+          <div className="">
+            <h1 className="font-medium">{props.title}</h1>
+            <p className="text-primary font-light">{props.description}</p>
+          </div>
+        </div>
+        <p className="text-primary block font-mono font-medium">
+          {props.duration}
+        </p>
+      </div>
+    </a>
+  );
+}
+
+export default summaryPane;
