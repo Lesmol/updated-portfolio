@@ -11,7 +11,7 @@ function customImage(props: CustomImageProps) {
     <img
       src={props.src}
       alt={props.alt}
-      className={`h-[25%] w-[45%] rounded-3xl object-cover md:h-[250px] md:w-[200px] ${
+      className={`h-[25%] w-[45%] rounded-2xl object-cover md:h-[250px] md:w-[200px] ${
         !props.hidden ? "" : "hidden md:block"
       }`}
     />

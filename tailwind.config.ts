@@ -22,7 +22,8 @@ export default {
       },
       backgroundColor: {
         primary: "#141414",
-        "text-darker-primary": "#2D2D2D",
+        "darker-primary": "#0A0A0A",
+        "near-black": "#050505",
         secondary: "#181818",
         light: "#E9E9E9",
       },
