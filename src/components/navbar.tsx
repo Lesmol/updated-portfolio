@@ -38,7 +38,7 @@ function navbar() {
           </li>
           <li>
             <Link
-              href="/blog"
+              href="/blogPosts"
               className="150 ml-8 font-medium text-primary transition ease-in-out hover:text-white"
             >
               Blog
@@ -147,7 +147,7 @@ function navbar() {
       <AnimatePresence>
         {mobileNav ? (
           <motion.div
-            className="bg-near-black/90 fixed mx-auto mt-20 w-4/5 rounded-xl text-lg backdrop-blur-sm sm:hidden"
+            className="fixed mx-auto mt-20 w-4/5 rounded-xl bg-near-black/90 text-lg backdrop-blur-sm sm:hidden"
             initial={{ y: -5, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             exit={{ y: -5, opacity: 0 }}
@@ -196,7 +196,7 @@ function navbar() {
               </div>
             </a>
             <a
-              href="/blog"
+              href="/blogPosts"
               className="m-2 flex items-center space-x-2 rounded-xl bg-darker-primary px-1 py-2"
             >
               <div className="rounded-xl bg-primary p-3 font-bold text-primary">

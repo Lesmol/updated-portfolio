@@ -53,14 +53,14 @@ body {
   margin-bottom: 1.5rem;
 }
 
-.post-content img{
+.post-content img {
   margin-top: 1.8rem;
   margin-bottom: 2.8rem;
   border-radius: 0.5rem;
   box-shadow: 0px 0px 50px -11px rgb(50, 50, 50);
 }
 
-.post-content a{
+.post-content a {
   color: #1e90ff;
 }
 

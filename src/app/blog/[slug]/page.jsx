@@ -33,7 +33,7 @@ async function page({ params }) {
       <Navbar />
       <article className="mt-8">
         <img src={post.imgUrl} alt={post.alt} className="w-full" />
-        <h1 className="mt-2 text-3xl md:text-4xl">{post.title}</h1>
+        <h1 className="mt-5 text-3xl md:text-4xl">{post.title}</h1>
         <p className="mt-1 text-custom-light-grey">{post.summary}</p>
         <div className="my-4 flex items-center space-x-4">
           <div className="aspect-square w-14 rounded-2xl bg-primary object-cover">

@@ -1,16 +1,23 @@
+import Navbar from "@/components/navbar";
 import React from "react";
-import { getPinnedPosts } from "@/lib/posts";
+import { getAllPosts } from "@/lib/posts";
 
-function articles() {
-  const posts = getPinnedPosts();
+function blogPosts() {
+  const posts = getAllPosts();
   return (
-    <>
-      <h1 className="mb-6 mt-14 text-4xl font-bold">
-        Pinned{" "}
+    <div className="container mx-auto max-w-2xl items-center p-4 md:mb-24 md:p-0">
+      <Navbar />
+      <h1 className="mb-2 mt-14 text-5xl font-bold">
+        My{" "}
         <span className="bg-gradient-to-r from-blue-400 via-blue-200 to-blue-500 bg-clip-text text-transparent">
           Posts
         </span>
       </h1>
+      <div className="mb-12 text-primary">
+        I'm passionate about topics like cloud computing, front-end and back-end
+        development, with a dash of experimentation and self-reflection
+        sprinkled into the mix.
+      </div>
       {posts.map((post) => (
         <a href={`/blog/${post.slug}`} key={post.slug} className="group">
           <div className="mb-12 w-fit justify-between sm:mx-auto md:flex md:flex-row-reverse">
@@ -31,8 +38,8 @@ function articles() {
           </div>
         </a>
       ))}
-    </>
+    </div>
   );
 }
 
-export default articles;
+export default blogPosts;
