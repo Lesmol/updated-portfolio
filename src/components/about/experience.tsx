@@ -5,14 +5,14 @@ function experience() {
   return (
     <div className="max-w-screen sm mt-10">
       <h1 className="text-xl">Work</h1>
-      <p className="text-primary mb-6 text-sm">
+      <p className="mb-6 text-sm text-primary">
         Here are some of the places I've worked
       </p>
       <div id="experience" className="mt-3 space-y-8">
         <SummaryPane
           title="Support Specialist"
           duration="2024 - Present"
-          description="Capitec"
+          description="Capitec Business Bank"
           imageUrl="https://asset.brandfetch.io/id-nzL804J/idlF4F-KCx.jpeg"
           imageAlt="Capitec Logo"
           institutionUrl="https://www.capitecbank.co.za/business/"
