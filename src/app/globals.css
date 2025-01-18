@@ -3,19 +3,95 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --foreground: #ffffff;
+  --background: #171717;
 }
 
 body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+/* h1, */
+.post-content h2,
+.post-content h3 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color: white;
+  margin-top: 2.5rem;
+}
+
+/* h1 {
+  font-size: 2.5rem;
+} */
+
+.post-content h2 {
+  font-size: 2rem;
+}
+
+.post-content h3 {
+  font-size: 1.5rem;
+}
+
+/* p {
+  font-size: 1.125rem;
+  margin-bottom: 1rem;
+} */
+
+.post-content ul {
+  list-style-type: none;
+}
+
+.post-content ul li {
+  margin-bottom: 0.9rem;
+}
+
+.post-meta {
+  font-size: 0.875rem;
+  color: #666;
+  margin-bottom: 1.5rem;
+}
+
+.post-content img{
+  margin-top: 1.8rem;
+  margin-bottom: 2.8rem;
+  border-radius: 0.5rem;
+  box-shadow: 0px 0px 50px -11px rgb(50, 50, 50);
+}
+
+.post-content a{
+  color: #1e90ff;
+}
+
+.post-content a:hover {
+  color: #0f4780;
+  transition: color 0.15s ease-in-out;
+}
+
+blockquote {
+  background-color: #f4f7fb;
+  border-left: 4px solid #1e90ff;
+  padding: 1rem;
+  font-style: italic;
+  margin: 2rem 0;
+}
+
+code {
+  background-color: #f4f7fb;
+  /* padding: 0.2rem 0.5rem; */
+  border-radius: 4px;
+}
+
+pre {
+  background-color: #282c34;
+  color: #b3b3b3;
+  padding: 1rem;
+  border-radius: 4px;
+  overflow-x: auto;
+}
+
+pre code {
+  background-color: transparent;
+  color: inherit;
 }

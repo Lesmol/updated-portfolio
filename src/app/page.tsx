@@ -1,4 +1,5 @@
 import About from "@/components/home/about";
+import Articles from "@/components/home/articles";
 import ProjectSummary from "@/components/home/projectSummary";
 import Socials from "@/components/home/socials";
 import Navbar from "@/components/navbar";
@@ -9,7 +10,7 @@ export default function Home() {
       <Navbar />
       <About />
       <Socials />
-      <ProjectSummary />
+      <Articles />
       {/* <motion.div
         initial={{ y: 20, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}

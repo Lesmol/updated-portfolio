@@ -3,7 +3,7 @@ import React from "react";
 function socials() {
   return (
     <>
-      <div className="text-primary mt-6 flex items-center space-x-4 md:justify-center md:space-x-8">
+      <div className="text-primary mt-6 flex items-center space-x-4 md:justify-center md:space-x-8 mb-12">
         <div className="md:hover:text-darker-primary 150 transition ease-out">
           <span className="text-xs">&#x2197;</span>
           <a

@@ -17,7 +17,7 @@ function navbar() {
   }
 
   return (
-    <div className="flex max-w-lg justify-end sm:mx-auto sm:block">
+    <div className="flex max-w-xl justify-end sm:mx-auto sm:block">
       <nav className="mt-4 hidden items-center justify-between rounded-3xl bg-primary px-6 py-4 sm:flex">
         <Link href="/">
           <img
