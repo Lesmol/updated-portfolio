@@ -5,9 +5,9 @@ function reachOut() {
   return (
     <div className="mt-10 max-w-screen-sm">
       <h1 className="text-xl">Reach out</h1>
-      <p className="text-primary mb-4 text-sm">
-        I always look forward to meeting new people, so you can say "Hi" any
-        time or day!
+      <p className="mb-4 text-sm text-primary">
+        I always look forward to meeting new people, so you can say &#34;Hi&#34;
+        any time or day!
       </p>
       <div className="mt-3 flex flex-wrap space-x-3">
         <CustomSocialLink

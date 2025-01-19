@@ -1,6 +1,5 @@
 import About from "@/components/home/about";
 import Articles from "@/components/home/articles";
-import ProjectSummary from "@/components/home/projectSummary";
 import Socials from "@/components/home/socials";
 import Navbar from "@/components/navbar";
 

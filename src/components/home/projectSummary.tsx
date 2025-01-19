@@ -5,8 +5,8 @@ function projectSummary() {
   return (
     <div className="mt-8">
       <h3 className="mb-1 text-xl">Projects</h3>
-      <p className="text-primary mb-4 text-sm">
-        Public repo's of projects I'm either working on or completed.
+      <p className="mb-4 text-sm text-primary">
+        Public repo&#39;s of projects I&#39;m either working on or completed.
       </p>
       <LinkItem
         title="Responsive React App deployed on Azure"

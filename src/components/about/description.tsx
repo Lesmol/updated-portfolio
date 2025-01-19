@@ -10,9 +10,9 @@ function description() {
       </p>
       <br />
       <p>
-        Beyond IT, I'm an avid reader and find great pleasure in hitting the
-        Golf course to develop my Golf game and register a low handicap - who
-        knows, maybe I'm talented enough to go pro🏌🏽‍♂️.
+        Beyond IT, I&apos;m an avid reader and find great pleasure in hitting
+        the Golf course to develop my Golf game and register a low handicap -
+        who knows, maybe I&apos;m talented enough to go pro🏌🏽‍♂️.
       </p>
     </div>
   );

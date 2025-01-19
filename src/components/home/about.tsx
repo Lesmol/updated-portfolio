@@ -11,7 +11,7 @@ function about() {
           </a>
         </div>
       </div>
-      <h1 className="mt-6 text-6xl font-bold md:mt-12">I'm Lesedi</h1>
+      <h1 className="mt-6 text-6xl font-bold md:mt-12">I&#39;m Lesedi</h1>
       <p className="mt-2 text-left text-custom-light-grey">
         A developer pursuing a BSc in Informatics, learning to build, manage and
         maintain complex cloud application on AWS/Azure, and I write to document

@@ -4,7 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 
-function navbar() {
+function Navbar() {
   const [mobileNav, setMobileNav] = useState(false);
   const [moreNav, setMoreNav] = useState(false);
 
@@ -153,7 +153,7 @@ function navbar() {
             exit={{ y: -5, opacity: 0 }}
             transition={{ duration: 0.2 }}
           >
-            <a
+            <Link
               href="/"
               className="m-2 flex items-center space-x-2 rounded-xl bg-darker-primary px-1 py-2"
             >
@@ -173,8 +173,8 @@ function navbar() {
                 <h4 className="text-sm">Home</h4>
                 <p className="text-xs text-primary">Welcome to my site!!</p>
               </div>
-            </a>
-            <a
+            </Link>
+            <Link
               href="/about"
               className="m-2 flex items-center space-x-2 rounded-xl bg-darker-primary px-1 py-2"
             >
@@ -194,8 +194,8 @@ function navbar() {
                 <h4 className="text-sm">About</h4>
                 <p className="text-xs text-primary">A little more about me</p>
               </div>
-            </a>
-            <a
+            </Link>
+            <Link
               href="/blogPosts"
               className="m-2 flex items-center space-x-2 rounded-xl bg-darker-primary px-1 py-2"
             >
@@ -218,7 +218,7 @@ function navbar() {
                   Interests, experiments and thoughts
                 </p>
               </div>
-            </a>
+            </Link>
           </motion.div>
         ) : null}
       </AnimatePresence>
@@ -226,4 +226,4 @@ function navbar() {
   );
 }
 
-export default navbar;
+export default Navbar;

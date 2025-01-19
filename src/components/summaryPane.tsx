@@ -21,10 +21,10 @@ function summaryPane(props: SummaryPaneProps) {
           />
           <div className="">
             <h1 className="font-medium">{props.title}</h1>
-            <p className="text-primary font-light">{props.description}</p>
+            <p className="font-light text-primary">{props.description}</p>
           </div>
         </div>
-        <p className="text-primary block font-mono font-medium">
+        <p className="block font-mono font-medium text-primary">
           {props.duration}
         </p>
       </div>
