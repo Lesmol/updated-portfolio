@@ -1,13 +1,12 @@
 import React from "react";
 import MarkdownIt from "markdown-it";
-import { getAllPosts } from "@/lib/posts";
-import { html } from "framer-motion/m";
+import { getPinnedPosts } from "@/lib/posts";
 import Navbar from "@/components/navbar";
 
 const md = new MarkdownIt();
 
 export async function generateStaticParams() {
-  const posts = getAllPosts();
+  const posts = getPinnedPosts();
 
   return posts.map((post) => ({
     slug: post.slug,
@@ -15,7 +14,7 @@ export async function generateStaticParams() {
 }
 
 async function fetchPost(slug) {
-  const posts = getAllPosts();
+  const posts = getPinnedPosts();
   return posts.find((post) => post.slug === slug);
 }
 
@@ -29,9 +28,9 @@ async function page({ params }) {
   const htmlContent = md.render(post.content);
 
   return (
-    <div className="mx-auto max-w-3xl p-4">
+    <div className="mx-auto max-w-3xl">
       <Navbar />
-      <article className="mt-8">
+      <article className="mt-8 p-4">
         <img src={post.imgUrl} alt={post.alt} className="w-full" />
         <h1 className="mt-5 text-3xl md:text-4xl">{post.title}</h1>
         <p className="mt-1 text-custom-light-grey">{post.summary}</p>
