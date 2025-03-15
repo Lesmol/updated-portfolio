@@ -14,9 +14,8 @@ function blogPosts() {
         </span>
       </h1>
       <div className="mb-12 text-primary">
-        I'm passionate about topics like cloud computing, front-end and back-end
-        development, with a dash of experimentation and self-reflection
-        sprinkled into the mix.
+        Topics I'm interested in with a dash of experimentation and
+        self-reflection sprinkled into the mix.
       </div>
       {posts.map((post) => (
         <a href={`/blog/${post.slug}`} key={post.slug} className="group">

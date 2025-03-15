@@ -38,3 +38,10 @@ export function getPinnedPosts() {
     };
   });
 }
+
+export function getPostCollection() {
+  const pinnedPosts = getPinnedPosts();
+  const allPosts = getAllPosts();
+
+  return [...allPosts, ...pinnedPosts];
+}
