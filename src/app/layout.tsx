@@ -9,11 +9,6 @@ const roboto = Roboto({
   display: "swap",
 });
 
-export const viewport: Viewport = {
-  width: "device-width",
-  initialScale: 1,
-};
-
 export const metadata: Metadata = {
   title: "Lesedi Molemi",
   description:
