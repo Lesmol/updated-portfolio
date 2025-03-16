@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 
 function about() {
   return (
-    <div className="container mx-auto mb-24 max-w-2xl items-center p-4 md:p-0">
+    <div className="container mx-auto max-w-2xl items-center p-4 md:p-0">
       <Navbar />
       <Images />
       <Description />

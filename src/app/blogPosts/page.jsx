@@ -5,7 +5,7 @@ import { getAllPosts } from "@/lib/posts";
 function blogPosts() {
   const posts = getAllPosts();
   return (
-    <div className="container mx-auto max-w-2xl items-center p-4 md:mb-24 md:p-0">
+    <div className="container mx-auto max-w-2xl items-center p-4 md:p-0">
       <Navbar />
       <h1 className="mb-2 mt-14 text-5xl font-bold">
         My{" "}
