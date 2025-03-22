@@ -1,5 +1,12 @@
 import Navbar from "@/components/navbar";
+import { Metadata } from "next";
 import React from "react";
+
+export const metadata: Metadata = {
+  title: "Lesedi Molemi | Projects",
+  description:
+    "Welcome to my projects page, where you'll get to see the things I've worked on.",
+};
 
 function page() {
   return (
