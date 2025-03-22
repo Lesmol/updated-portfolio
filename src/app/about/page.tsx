@@ -14,40 +14,12 @@ export const metadata: Metadata = {
 
 function about() {
   return (
-    <div className="container mx-auto mb-24 max-w-2xl items-center p-4 md:p-0">
+    <div className="container mx-auto max-w-2xl items-center p-4 md:p-0">
       <Navbar />
       <Images />
       <Description />
       <ReachOut />
       <Experience />
-      {/* <motion.div
-        initial={{ y: 20, opacity: 0 }}
-        animate={{ y: 0, opacity: 1 }}
-        transition={{ duration: 0.6 }}
-      >
-        <Images />
-      </motion.div>
-      <motion.div
-        initial={{ y: 20, opacity: 0 }}
-        animate={{ y: 0, opacity: 1 }}
-        transition={{ duration: 0.6, delay: 0.1 }}
-      >
-        <Description />
-      </motion.div>
-      <motion.div
-        initial={{ y: 20, opacity: 0 }}
-        animate={{ y: 0, opacity: 1 }}
-        transition={{ duration: 0.6, delay: 0.2 }}
-      >
-        <ReachOut />
-      </motion.div>
-      <motion.div
-        initial={{ y: 20, opacity: 0 }}
-        animate={{ y: 0, opacity: 1 }}
-        transition={{ duration: 0.6, delay: 0.3 }}
-      >
-        <Experience />
-      </motion.div> */}
     </div>
   );
 }

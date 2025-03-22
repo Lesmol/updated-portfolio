@@ -6,7 +6,7 @@ function experience() {
     <div className="max-w-screen sm mt-10">
       <h1 className="text-xl">Work</h1>
       <p className="mb-6 text-sm text-primary">
-        Here are some of the places I&apos;ked
+        Here are some of the places I&apos;ve worked
       </p>
       <div id="experience" className="mt-3 space-y-8">
         <SummaryPane

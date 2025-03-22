@@ -5,7 +5,7 @@ import { getAllPosts } from "@/lib/posts";
 function blogPosts() {
   const posts = getAllPosts();
   return (
-    <div className="container mx-auto max-w-2xl items-center p-4 md:mb-24 md:p-0">
+    <div className="container mx-auto max-w-2xl items-center p-4 md:p-0">
       <Navbar />
       <h1 className="mb-2 mt-14 text-5xl font-bold">
         My{" "}
@@ -14,9 +14,8 @@ function blogPosts() {
         </span>
       </h1>
       <div className="mb-12 text-primary">
-        I'm passionate about topics like cloud computing, front-end and back-end
-        development, with a dash of experimentation and self-reflection
-        sprinkled into the mix.
+        Topics I'm interested in with a dash of experimentation and
+        self-reflection sprinkled into the mix.
       </div>
       {posts.map((post) => (
         <a href={`/blog/${post.slug}`} key={post.slug} className="group">
@@ -25,7 +24,7 @@ function blogPosts() {
               <img
                 src={post.imgUrl}
                 alt=""
-                className="mb-2 h-full object-cover transition duration-300 ease-in-out md:mb-0 md:group-hover:scale-110"
+                className="mb-2 h-full w-full object-cover transition duration-300 ease-in-out md:mb-0 md:group-hover:scale-110"
               />
             </div>
             <div className="md:w-[500px]">
